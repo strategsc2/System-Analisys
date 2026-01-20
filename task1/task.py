@@ -138,7 +138,8 @@ def main(s: str, e: str) -> Tuple[
     r5 = g.get_single_level_subordination_matrix()
     result: Tuple[List[List[bool]]] = (r1, r2, r3, r4, r5)
 
-    print(result)
+    ##print(result)
+    return(result)
 
 if __name__ == "__main__":
     main("1,2\n1,3\n3,4\n3,5\n5,6\n6,7", "1")
