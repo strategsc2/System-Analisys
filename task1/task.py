@@ -47,7 +47,7 @@ class graph:
             self.append_edge(tuple(pair.split(',')))
 
         self.remove_root(root, None)
-        print(self)
+       ## print(self)
 
     def __str__(self) -> str:
         return f'root: {self.root}, nodes: {self.nodes}\n'
@@ -137,9 +137,8 @@ def main(s: str, e: str) -> Tuple[
     r4 = g.get_transitive_subordination_relationship()
     r5 = g.get_single_level_subordination_matrix()
     result: Tuple[List[List[bool]]] = (r1, r2, r3, r4, r5)
+    return result
 
-    ##print(result)
-    return(result)
 
 if __name__ == "__main__":
-    main("1,2\n1,3\n3,4\n3,5\n5,6\n6,7", "1")
+    print(main("1,2\n1,3\n3,4\n3,5\n5,6\n6,7", "1"))
