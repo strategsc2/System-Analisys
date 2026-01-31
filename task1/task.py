@@ -137,7 +137,7 @@ def main(s: str, e: str) -> Tuple[
     r4 = g.get_transitive_subordination_relationship()
     r5 = g.get_single_level_subordination_matrix()
     result: Tuple[List[List[bool]]] = (r1, r2, r3, r4, r5)
-    return result
+    return(result)
 
 
 if __name__ == "__main__":
